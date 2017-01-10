@@ -6,5 +6,6 @@ Shown below are the input and output of the program.
 
 ![output1](https://cloud.githubusercontent.com/assets/12389081/21818953/bff805ca-d78f-11e6-8f65-8670cde0e9b5.png)
 
+The input image is fed to the model consisting of 2 conv and 2 fc layers which outputs the Q values corresponding to the actions bottom and right. The agent is moved right or bottom depending on which Q value was greater and the corresponding new image generated with the new position of agent is fed again to the model.The process of getting an output state and feeding back the new image is kept on repeating untill the agent reaches the terminal stage where it reaches the destination.
 
 
